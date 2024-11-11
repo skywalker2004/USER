@@ -1,0 +1,64 @@
+{
+	"name": "laravel-create-view",
+	"displayName": "Laravel Create View",
+	"description": "Create laravel view using dot notation",
+	"version": "0.0.6",
+	"publisher": "glitchbl",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"repository": "https://github.com/glitchbl/laravel-create-view.git",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"PHP",
+		"Laravel"
+	],
+	"activationEvents": [
+		"onCommand:extension.createView",
+		"onLanguage:php",
+		"onLanguage:blade"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.createView",
+				"title": "Create View",
+				"category": "Laravel"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
+	},
+	"dependencies": {
+		"@types/mkdirp": "^0.5.2",
+		"mkdirp": "^0.5.1"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"__metadata": {
+		"id": "285b59bb-7629-432e-9c32-417b90e5fbc2",
+		"publisherId": "789bdcd8-97c8-4986-8936-079c1461deb9",
+		"publisherDisplayName": "glitchbl",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1729685758051,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}
